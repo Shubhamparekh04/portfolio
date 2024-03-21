@@ -109,8 +109,12 @@ body {
   margin: 0px;
 }
 
+#qr-scanner > img {
+  border-left: 1px solid #000;
+}
+
 #qr-scanner:hover {
-  transform: translate(-200px);
+  transform: translate(-195px);
   transition: transform 2s ease-in-out;
   z-index: 1;
 }
