@@ -99,7 +99,7 @@ body {
 
 /*------------------------------------------------------ QR CODE ----------------------------------------------------------*/
 #qr-scanner {
-  background-color: #76b900;
+  background-color: #75b9003a;
   position: fixed;
   top: 19vh;
   right: -200px;
@@ -109,9 +109,6 @@ body {
   margin: 0px;
 }
 
-#qr-scanner > img {
-  border-left: 1px solid #000;
-}
 
 #qr-scanner:hover {
   transform: translate(-195px);
@@ -122,11 +119,21 @@ body {
 #qr-scanner span {
   text-align: center;
   rotate: -90deg;
-  color: #000;
+  color: white;
   font-size: 0.9rem;
   padding: 0px;
   width: 50px;
 }
+
+#qr-scanner:hover {
+  background-color: #76b900;
+}
+
+#qr-scanner:hover span{
+  color: #000;
+}
+
+
 
 @media (max-width: 600px) {
   #qr-scanner span {
